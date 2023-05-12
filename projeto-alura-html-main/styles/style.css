@@ -1,0 +1,144 @@
+  body {
+    height: 100vh;
+    box-sizing: border-box;
+    background: var(--cor-primaria);
+    color: var(--cor-textos);
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0
+  }
+
+  :root {
+    --cor-primaria: #152C40;
+    --cor-secundaria: #2C5773;
+    --cor-textos: #96C6D9;
+    --cor-footer: #0D0D0D;
+    --cor-strongs:#25C7D9;
+  }
+
+  strong {
+    color: var(--cor-strongs );
+  }
+
+
+  .cabecalho {
+    padding: 2% 0 0 2%
+  }
+
+  .cabecalho__menu {
+    width: 100%;
+    display: flex;
+    justify-content:  center;
+    text-align: center;
+    gap: 80px; 
+  }
+
+  .cabecalho__menu__link {
+    color: var(--cor-textos);
+    font-size: 1.5rem;
+    text-decoration: none;
+    
+  }
+
+  .conteudo-geral_titulo {
+    font-size: 2.25rem;
+  }
+
+  .conteudo-geral {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+  }
+
+  .conteudo-geral_conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .links {
+    display: flex;
+    justify-content: center;
+    border: 2px solid var(--cor-textos);
+    font-size: 1.6rem;
+    width: 50%;
+    text-align: center;
+    border-radius: 20px;
+    padding: 21.5px 0;
+    color: var(--cor-textos);
+    font-weight: 500;
+    gap: 16px;
+    opacity: 0.8;
+    transition: 0.6;
+    text-decoration: none;
+
+  }
+
+  .links:hover {
+    background-color: var(--cor-secundaria)
+  }
+
+  .texto {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  .redes-sociais {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    color: var(--cor-secundaria);
+
+  }
+
+  .apresentacao__links__subtitulo {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--cor-textos);
+
+  }
+
+  .fotos {
+    border-radius: 30px;
+    width: 50%;
+
+  }
+
+  .rodape {
+    color: white;
+    background-color: var(--cor-footer);
+    padding: 24px;
+    font-size: 1.25rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+  }
+
+  @media (max-width: 1200px){
+    .cabecalho{
+      padding: 10%;
+    }
+
+    .cabecalho__menu{
+      justify-content: center;
+    }
+    .conteudo-geral{
+      flex-direction: column-reverse;
+      padding: 5%;      
+    }
+    .conteudo-geral_conteudo{
+      width: auto;
+    }
+  }
